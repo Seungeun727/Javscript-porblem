@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial Calculation</title>
+</head>
+<body>
+<script>  
+  var num = prompt("숫자를 입력하세요");
+  var msg = "";
+
+  if(num !== null) {  // null이 아니라면 입력값을 처리함.
+    var resultNum = 1; // Factorial 결과값
+    var count = 1;  // 카운터
+    
+    while(count <= num) {
+      resultNum *= count;
+      count++;
+    }
+    msg = num + "!=" + resultNum;
+  }
+  else  //// null이 맞다면 해당 메시지 출력
+    msg ="값을 입력하지 않았습니다.";
+  document.write(msg);
+</script>
+</body>
+</html>
