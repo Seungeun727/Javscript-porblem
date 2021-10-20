@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculation</title>
+</head>
+<body>
+  <script>
+    var currentYear = 2021; // 현재 연도 변수와 초기값 지정
+    var birthYear;  // 사용자의 연도 변수 선언
+    var age;
+
+    // 사용자가 prompt창에서 birthYear값을 입력
+    birthYear = prompt("태어난 연도를 입력하세요. (YYYY)", "");
+    age = currentYear - birthYear;
+    document.write(currentYear+ "년 현재<br>");
+    document.write(birthYear + "년에 태어난 사람의 나이는" + age + "세 입니다.");
+  </script>
+</body>
+</html>
