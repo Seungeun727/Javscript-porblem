@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserved Word: let Using</title>
+</head>
+<body>
+<script>
+  // var: 함수 영역의 스코프 가짐
+  // let, const: 블록 영역의 스코프를 가짐.
+
+  // let
+  // 1. 선언된 변수는 블록 내에서만 유효된다.
+
+  // function calcSum(n) { // n: 인자 
+  //   let sum = 0; // 지역 변수
+  //   sum = 0;
+  //   for(let i = 1; i <= n + 1; i++) {
+  //     sum += i;
+  //   }
+  //   sum = 100;
+  //   console.log(sum);
+  // }
+  // calcSum(10);
+  // console.log(sum); // 전역 변수 사용
+
+  // const
+  // 1. 상수 변수
+  // 2. 재선언 및 재할당 x
+  // 3. 블록 스코프를 가짐
+  const currentYear = 2020;
+  console.log(currentYear);
+  // 변수 재선언시 error 발생
+  // const currentYear; 
+  
+</script>
+</body>
+</html>
